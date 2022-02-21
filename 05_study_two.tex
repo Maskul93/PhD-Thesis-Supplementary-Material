@@ -1,0 +1,156 @@
+% -- Vertical Jump -- %
+\section{Introduction}
+The neuromuscular capacity of an individual can be identified through a vertical jump. In the context of a unloaded evaluation, the most commonly used test is the countermovement jump (CMJ). The choice of this paradigm is supported by the fact that the individual does not require a difficult familiarization, being the test itself within everyone's reach. 
+
+Furthermore, the CMJ allows the extraction of a plethora of information about the ability of an individual to execute a stretch-shortening cycle (SSC). Such a mechanism, occurring at the muscle-tendon level, consists of an eccentric contraction followed by a concentric one of the same muscle group \citep{neumann_kelly_kiefer_martens_grosz_2017}. The elastic enhancement produced throughout the eccentric phase allows to augment the force produced during the concentric one. 
+
+The motor tasks that include an extensive usage of this mechanism are referred to as \textit{plyometrics}. More in general, plyometry encompasses all those tasks that combine force with velocity of execution in order to generate the highest power in a functional movement. 
+
+As all the variables involved relate to the vertical component of the ground reaction force (GRF), the notation $F$ will be used to depict the vertical GRF. Moreover, all the quantities relates to the jumper center of mass (CoM). 
+
+\section{Countermovement jump phases}
+
+\begin{figure}[ht]
+\centering
+\input{img/Vertical_Jump/cmj_phases.pgf}
+\caption{Depiction of the main phases of a countermovement jump acceleration trace. The signal here depicted was normalized to body mass, and the gravity was removed. Legend: W weighting phase; U = unweighting phase; B = braking phase; P = propulsion phase; F = flight phase.}
+\label{fig:cmj_phases}
+\end{figure}
+
+\paragraph{Weighting phase.} It corresponds to the timespan, immediately before the task onset, along which the jumper stands as still as possible in orthostatic position. If force platforms (FP) are used, such a position is required to correctly remove the jumper weight from the ground reaction force (FP) measured by the FP. Such phase terminates with the movement onset, occurring at $t_0$. 
+
+It has been suggested \citep{owen_threshold_2014} to consider an appropriate threshold when identifying the onset time instant:
+
+\begin{equation}\label{eq:onset_threshold}
+	\overline{W} = 5 \sigma(W)
+\end{equation}
+
+where $\overline{W}$ is the threshold and $\sigma(W)$ is the standard deviation of the jumper weight $W$ measured during the weighting phase. Once the first sample $t_{\overline{W}}$ such that $F(t_{\overline{W}}) < \overline{W}$ has been identified, it is suggested to chose $t_0 = t_{\overline{W}} - 30$ ms before it. 
+
+\paragraph{Unweighting phase.} After the movement onset, the jumper starts the countermovement. At first, the agonist muscles are relaxed, allowing hip, knee and ankle flexion. During the unweighting phase, the $F$ measured falls below $W$. More specifically, the unweighting phase corresponds to the time span, prior the take-off, for which $F < W$. 
+
+The first time instant such that $F \sim W$ terminates the unweighting phase, hence giving rise to the following breaking phase. Such an instant is denoted as $t_{UB}$. 
+
+From a mathematical perspective, such a transition corresponds to a minimum in the velocity $v$. Let consider $F = m a$. Dividing by the (constant) mass and removing the gravitational acceleration, one has that, during the weighting phase, the acceleration is null. Differentiating the acceleration, one has:
+
+\begin{equation}\label{eq:unweighting_acc}
+	a = \dot{v}
+\end{equation}
+
+Hence, the minima of $v$ correspond to the zeros of $a$, bringing to the conclusion that the end of the unweighting phase occurs at $t_{UB}$ such that:
+
+\begin{equation}\label{eq:unweighting_transition}
+	t_{UB} = \min_{t < t_{TO}} \{ v(t) \}
+\end{equation}
+
+where $t_{TO}$ is the take-off instant. 
+
+\paragraph{Braking phase.} In this phase, the jumper diminishes its own CoM velocity. Such a phase starts a sample after the negative velocity peak ($t_{UB}$). In the same way, the braking phase terminates as the CoM reaches zero velocity again ($t = t_{BP}$). Indeed, following the same reasoning as for the end of the unweighting phase, it can be observed that at $t_{BP}$ the CoM reaches its minimum height (or maximum negative displacement), with the jumper being in squat position.
+
+\paragraph{Propulsion phase.}  Such phase initiates a sample after the CoM reached the minimum height and zero velocity. It encompasses hip, knees and ankles extension, so that the CoM can be vertically pushed up. 
+
+In literature \citep{mcmahon_threshold_2018} it has been suggested to set the beginning of the propulsion phase at the first time sample $t_{BP} : v(t_{BP}) > 0.01$ m/s. The propulsion phase continues until the take-off instant. Such an instant, $t_{TO}$, occurs as the jumper leaves the ground, that is when $F : F(t_{TO}) \sim 0$.
+
+It must be noticed that the CoM peak velocity is reached prior the take-off. Indeed, at peak-velocity the CoM starts decelerating, presumably due to residual accelerations brought by feet and tibia \textbf{[REFERENCE]}.
+
+\paragraph{Flight phase.} This phase begins one time sample after $t_{TO}$, and ends when the CoM reaches the zero velocity again. When this occurs, the jumper landed, which timing is indicated as the touchdown instant ($t_{TD}$).
+It should be said that this portion of the jump will not be further analyzed, as the focus is addressed on the jump phases preceding the flight. 
+
+
+\subsection{Experimental precautions}
+In order to obtain more reliable and repeatable measures, one must take into account some experimental precautions. In the following paragraphs, some of these \textit{good habits} are detailed. For a statistical reason, the number of attempts should be more than one, in order to prevent the random error probability \citep{henry_best_1967}. Hence, in general, the reliability of performance analysis improves along with the number of jump attempts. 
+
+\subsection{Arm swing}
+The usage of arm swing in a CMJ is commonly required by the external experimenter/coatch in conjunction with the request for maximum jump height. However, when one looks at the measured height quantitatively, arm swing provokes an alteration of both CoM velocity and height at the take-off instant. Consequentially, arm swing provokes alterations in the same variables at touchdown \citep{gutierrez-davila_analysis_2014}. 
+
+Such a configuration is particularly incompatible when the \textit{flight-time method} is used to achieve height estimate. Moreover, the arm swing technique varies between jumpers, making non-trivial a standardization of it as well as the errors the movement brings. 
+
+For the sake of completeness, it must be said that the arm swing allows to reach higher jump height. This is due mainly to lower limb contribution that, by producing more mechanical work, transmit a bigger torque to the hip \citep{hara_comparison_2008, harman_effects_1990, slinde_test-retest_2008}. However, it must be said that the analysis of linear CoM kinematics does not add any specific information about lower limbs contribution. 
+
+Finally, it can be said that the usage of the arm swing in a jump protocol should be motivated by a specific rationale, otherwise it should be avoided.
+
+\subsection{Starting position}
+The ideal situation is the one in which the jumper stays in neutral position with the lower limbs; consequently, the arms should be held in symmetrical fashion at waist height. It is fundamental that the jumpers stays still for at least one second prior the jump instruction. This is required to allow the correct removal of the body-weight from the measured $F$, hence for an adequate motor task onset identification.
+
+\subsection{Countermovement technique}
+The countermovement represents the first portion of a CMJ, immediately after the onset time instant ($t_{0}$). It consists into a combined flexion of hip and knees and a small ankle dorsiflexion, leading to CoM lowering. The countermovement is executed throughout the unweighting and braking phases. 
+
+The variables that mostly influence the countermovement dynamics are the velocity with which it is executed and the depth the CoM reached. Let consider $T_{CM} = t_{BP} - t_0$ as the time through which the countermovement spans. In general:
+
+\begin{itemize}
+	\item A faster, less deep countermovement would lead to shorter (combined) unweighting and braking phases (i.e. a smaller $T_{CM}$). This, in turn, generates a smaller impulse and, consequently, a smaller $v(t_{TO})$;
+	\item Conversely, a countermovement accomplished at the same velocity, but enhancing the CoM negative displacement (i.e. its depth), would lead to longer (combined) unweighting and braking phases (i.e. a bigger $T_{CM}$). This, in turn, generates a larger impulse and, consequently, a bigger $v(t_{TO})$. 
+\end{itemize}
+
+In general, the jumper should be encouraged to execute faster countermovements in order to start the SSC. 
+
+\subsection{Jump technique}
+The jump phase represents the second portion of a CMJ, immediately after the end of the braking phase. It consists of an extension of hips, knees, and ankles (plantarflexion), leading to CoM elevation. The jump phase spreads throughout the propulsion and flight phases of the CMJ. 
+
+If the objective is reaching the maximum height, this phase must be executed so that the CoM reaches the maximum possible velocity, being the latter two quantities linked with the take-off instant. 
+
+\section{The jump height}
+The height the jumper reaches in a CMJ execution is one, if not the main quantity of interest. Jump height can be estimated through two methods:
+
+\begin{itemize}
+	\item \textit{Flight Time} (FT), exploiting the equation of the uniformly accelerated motion;
+	\item \textit{Take-off Velocity} (TOV), exploiting the conservation of the mechanical energy principle.
+\end{itemize}
+
+\subsection{Flight Time}
+Jump height estimate by means of FT method relies on the spatial-temporal equation of the uniformly accelerated motion. Such a motion is supposed to occur along only one direction, the vertical one:
+
+\begin{equation}\label{eq:uniform_acc_motion}
+	h = h_{0} + v(t - t_{0}) + \frac{1}{2} a(t - t_{0})^2
+\end{equation}
+
+At initial time, the position of the CoM along the vertical direction is $h_0 = 0$. Furthermore, by definition we can assume that $t - t_0 = t_{F}$, that is the flight time. Finally, considering that the only acceleration to which the jumper is subject is the gravitational one, (\ref{eq:uniform_acc_motion}) can be written as:
+
+\begin{equation}\label{eq:uniform_acc_motion_bis}
+	h = v(t_F) + \frac{1}{2} g(t_F)^2
+\end{equation}
+
+The maximum displacement for such kind of motion is reached at $t_F/2$, hence:
+
+\begin{equation}\label{eq:flight_time}
+	h = \frac{1}{2} g \bigg( \frac{t_F}{2} \bigg) = \frac{1}{2} g \frac{1}{4} t_F^2 = \frac{g t_F^2}{8}
+\end{equation}
+
+The issue brought by the FT method is that it assumes that the jump is executed in a perfectly symmetrical fashion from $t_{TO}$ to $t_{TD}$. This is practically never true, having each jump its own dynamic as well as each jumper its jumping technique. 
+
+\subsection{Take-off Velocity}
+Height estimate accomplished through TOV method exploits the law of the mechanical energy conservation:
+
+\begin{equation}\label{eq:mechanical_energy_conservation}
+	m_{TO} g h_{TO} + \frac{1}{2} m v_{TO}^2 = m_{P} g h_{P} + \frac{1}{2} m v_{P}^2 
+\end{equation}
+
+where, in this specific case, the subscripts $_{TO}$ and $_P$ refer to the take-off and maximum height, respectively. By definition, one has that $h_{TO} = v_P = 0$. Moreover, being $m_{TO} = m_P$, the relationship becomes:
+
+\begin{equation}\label{eq:take-off_velocity}
+	\frac{1}{2} v_{TO}^2 = gh_P \quad \Rightarrow \quad h_P = \frac{v_{TO}^2}{2g}
+\end{equation}
+
+The TOV method is more reliable than the FT one, since it does not take in account the jump dynamic, but it considers the take-off velocity only. For this reason, it is fundamental that $t_TO$ identification is accomplished in the most robust way. 
+
+\section{Power}
+The ability to develop power is a key feature for the performance analysis in an athlete. The issue about power is, however, related to its definition. The CMJ demonstrated to be a reliable test for assessing power as well as an expedient to give a more reliable definition of it. 
+
+Before defining power, it is useful to introduce the concept of \textit{mechanical work} ($W$). In general, to accelerate and, in turn, to raise the CoM, the jumper must apply a given amount of external mechanical work:
+
+\begin{equation}\label{eq:work_general}
+	W = F \cdot x
+\end{equation}
+
+where $F$ is the force applied to the CoM to imprint a given acceleration ($F = ma$), while $x$ is the distance the CoM traveled as the force was applied. The measure unit of the mechanical work is [N $\cdot$ m] = [J] -- \textit{Joule}.
+
+Accordingly, the power ($P$) defines the rate of change of the mechanical work in a given amount of time. Mathematically, this corresponds to:
+
+\begin{equation}\label{eq:power_general}
+	P = \frac{dW}{dt} = \frac{d (F \cdot x)}{dt} = F \frac{dx}{dt} = F \cdot v
+\end{equation}
+
+that is the power is the product between the external forces acting on the CoM and its velocity. The measure unit of the power is [N $\cdot$ m $\cdot$ s$^{\rm{-1}}$] = [W] -- \textit{Watt}.
+
+\bibliographystyle{plainnat}
+\bibliography{bibliography.bib}

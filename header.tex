@@ -1,0 +1,60 @@
+% Abstract
+% 1. Introduction
+% Set the scene and problem statement. Introduce structure of thesis, state contributions % (3-5).
+% 2. Background
+% Demonstrate wider appreciation (context). Provide motivation. The problem statement and % the motivation state how you want the PhD to be judged - as engineering, scientific  method, theory, philosophy, &c.
+% 3. Related Work
+% Survey and critical assessment. Relation to own work.
+
+% 4-6. Analysis, design, implementation and interpretation of results
+% 7. Critical assessment of own work
+% State hypothesis, and demonstrate precision, thoroughness, contribution, and comparison  with closest rival.
+
+% 8. Further Work
+% 9. Summary Conclusions
+% Restate contribution
+
+% Appendix
+% Bibliography
+
+\documentclass[10pt]{book}
+\usepackage[utf8]{inputenc}
+
+%% ---- COLORS, FONTS, AND VISUAL IN GENERAL ---- %%
+
+%\usepackage{tikz} % Beautiful, Vector Figures
+\usepackage[dvipsnames]{xcolor} % A lot of colors
+\usepackage{tgpagella} % text only
+\usepackage{mathpazo}  % math & text
+\usepackage[colorlinks]{hyperref} % Hyperlinks
+\usepackage[titletoc]{appendix} % To put appendices as separate sections
+\renewcommand{\baselinestretch}{2.0}    % Line Spacing
+\usepackage{graphicx}       % To insert plots
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[inner=3.5cm,outer=3.5cm]{geometry} %left=4cm,right=2cm would be equivalent
+\hypersetup{
+linkcolor = RoyalBlue,
+citecolor = RoyalBlue,
+urlcolor = RoyalBlue
+}
+\usepackage{pgf}    % LaTeX-generated vectorial graphics
+
+%% ---- MATH ---- %%
+\usepackage{amsmath}    % Advanced Math Symbols
+\usepackage{amssymb}    % Advanced Misc Symbols
+\usepackage{leftidx}    % Left Superscript for CSs and DCMs
+\usepackage{bm}         % Bold Math
+
+%% -- SHORTCUT COMMANDS -- %%
+\newcommand{\hb}[1]{\hat{\bm{#1}}} % Easy versors with hat and bold 
+\newtheorem{proposition}{Proposition}   % Propositions
+
+%% -- SYNTHAX -- %%
+\usepackage[round]{natbib}              % Bibliography package
+\usepackage[sectionbib]{chapterbib}     % Separate bibliographies for each chapter
+\usepackage{etoolbox}                   % To make the appendices numbering be letter+number
+
+\title{PhD Thesis}
+\author{Guido Mascia}
+\date{\today}
+
