@@ -26,6 +26,6 @@ Each filename prefix refers to the project it shares the acronym with (e.g., ```
 
 The codes related to other *bigger* portions of the thesis are left to other different repositories, since they had to be made available for publishing purposes. In this case, coding is written both in ```MATLAB``` and ```Python``` (Jupyter Notebook). In particular:
 
-- [ ] Smartphone Height Democratization is available at [height-democratization](https://github.com/Maskul93/height-democratization)
-- [ ] Mechanical Power Estimation is available at [Jump-Power-ML-IMU](https://github.com/Maskul93/Jump-Power-ML-IMU)
-- [ ] MIMUs Offline Calibration: [MIMU-calib-tutorial](https://github.com/Maskul93/MIMU-calib-tutorial)
+- [x] Smartphone Height Democratization is available at [height-democratization](https://github.com/Maskul93/height-democratization)
+- [x] Mechanical Power Estimation is available at [Jump-Power-ML-IMU](https://github.com/Maskul93/Jump-Power-ML-IMU)
+- [x] MIMUs Offline Calibration: [MIMU-calib-tutorial](https://github.com/Maskul93/MIMU-calib-tutorial)
