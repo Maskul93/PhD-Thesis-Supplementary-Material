@@ -24,6 +24,9 @@ In this repository you can find some of the procedures I used in my works in the
 ### **Permutation Feature Importance**  - Codename ```PFI``` 
   - This portion of the supplementary material relates to the determination of the importance of a feature into a dataset.
   - Published in *Machine learning aided jump height estimate democratization through smartphone measures*, Frontiers in Sports and Active Living. doi: [10.3389/fspor.2023.1112739](https://doi.org/10.3389/fspor.2023.1112739)
+  
+### **Bland-Altman Plot** - Codename ```BAP```
+  - This portion of supplementary material is supposed to help understanding how to properly realize the Bland-Altman Plots.
 
 ## Data
 
