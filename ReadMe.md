@@ -1,6 +1,6 @@
 # PhD Thesis Supplementary Material
 
-This repository aims at disseminating what could not be mentioned directly in my PhD thesis.
+This repository aims at disseminating what could not be mentioned directly in my PhD thesis (*Facilitating Inertial Sensors-based Biomechanical Analysis: En Route from the Laboratory to the Real-life*).
 
 In this repository you can find some of the procedures I used in my works in the form of codes. All the material here proposed is written in ```MATLAB``` synthax. It can supposedly be used through GNU Octave. The list is the following one:
 
