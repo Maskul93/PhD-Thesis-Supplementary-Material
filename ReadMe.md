@@ -5,6 +5,10 @@ This repository aims at disseminating what could not be mentioned directly in my
 In this repository you can find some of the procedures I used in my works in the form of codes. All the material here proposed is written in ```MATLAB``` synthax. It can supposedly be used through GNU Octave. The list is the following one:
 
 ### **Ankle Functional Calibration** - Codename ```FAN```
+<p align="center"><kbd><a href = "">
+  <img width="640" src="/img/FAN_FIG.png" alt = ""> </a> </kbd>
+</p>
+
   - This portion of supplementary material relates to the creation of an anatomical coordinate system for the ankle joint complex. It was chosen to use a functional approach and stress for its repeatability and reliability during straight walking bouts. 
   - Published in *A Functional Calibration Protocol for Ankle Plantar-Dorsiflexion Estimate using Magnetic and Inertial Measurement Units: Repeatability and Reliability Assessment*, Journal of Biomechanics. doi: [10.1016/j.jbiomech.2022.111202](https://doi.org/10.1016/j.jbiomech.2022.111202)
 
