@@ -26,9 +26,11 @@ function [FC, FO] = ITW_GetFootContacts(gML, fs)
 % with Idiopathic Toe Walking", Michromachines, doi: 10.3390/mi14020277
 % -----------------------------------------------------------------------
 
-% Reverse the direction of the signal in order to find the peaks that
+% Filter the reversed signal in order to find the peaks that
 % roughly correspond to the mid-swing phase of the gait cycle. 
-[~, locs] = findpeaks(bwfilt(-gML, 2, fs, 5), ...
+[b, a] = butter(2, 5/(fs * .5), 'low');
+
+[~, locs] = findpeaks(filtfilt(b,a, -gML), ...
     'MinPeakHeight', std(-gML), 'MinPeakDistance', fs * .5);
 locs = [locs; length(gML)]; % Add a dummy value for computation purposes
 
