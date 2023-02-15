@@ -22,6 +22,8 @@ In this repository you can find some of the procedures I used in my works in the
 - Published in *Impact of Gait Events Identification through Wearable Inertial Sensors on Clinical Gait Analysis of Children with Idiopathic Toe Walking*, Micromachines. doi: [10.3390/mi14020277](https://doi.org/10.3390/mi14020277)
 
 ### **Permutation Feature Importance**  - Codename ```PFI``` 
+[![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
+
   - This portion of the supplementary material relates to the determination of the importance of a feature into a dataset.
   - Published in *Machine learning aided jump height estimate democratization through smartphone measures*, Frontiers in Sports and Active Living. doi: [10.3389/fspor.2023.1112739](https://doi.org/10.3389/fspor.2023.1112739)
   
