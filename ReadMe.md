@@ -5,6 +5,8 @@ This repository aims at disseminating what could not be mentioned directly in my
 In this repository you can find some of the procedures I used in my works in the form of codes. Most of the material here proposed is written in ```MATLAB``` synthax. It can supposedly be used through GNU Octave. However, some of the material is presented as either ```Jupyter Notebook``` or ```R``` code. The list is the following one:
 
 ### **Ankle Functional Calibration** - Codename ```FAN```
+[![Made withMATLAB](https://img.shields.io/badge/Made%20with-MATLAB-red?style=for-the-badge&logo=data:./img/MATLAB_icon.png)](https://www.mathworks.com/)
+
 <p align="center"><kbd><a href = "">
   <img width="640" src="/img/FAN_FIG.png" alt = ""> </a> </kbd>
 </p>
@@ -13,6 +15,7 @@ In this repository you can find some of the procedures I used in my works in the
   - Published in *A Functional Calibration Protocol for Ankle Plantar-Dorsiflexion Estimate using Magnetic and Inertial Measurement Units: Repeatability and Reliability Assessment*, Journal of Biomechanics. doi: [10.1016/j.jbiomech.2022.111202](https://doi.org/10.1016/j.jbiomech.2022.111202)
 
 ### **Foot Contacts**  - Codename ```ITW```
+[![Made withMATLAB](https://img.shields.io/badge/Made%20with-MATLAB-red?style=for-the-badge&logo=data:./img/MATLAB_icon.png)](https://www.mathworks.com/)
 <p align="center"><kbd><a href = "">
   <img width="640" src="/img/ITW_FIG.png" alt = ""> </a> </kbd>
 </p>
