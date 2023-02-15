@@ -31,6 +31,8 @@ In this repository you can find some of the procedures I used in my works in the
   - Published in *Machine learning aided jump height estimate democratization through smartphone measures*, Frontiers in Sports and Active Living. doi: [10.3389/fspor.2023.1112739](https://doi.org/10.3389/fspor.2023.1112739)
   
 ### **Bland-Altman Plot** - Codename ```BAP```
+[![Made withR](https://img.shields.io/badge/Made%20with-R-blue?style=for-the-badge&logo=R)](https://cran.r-project.org/)
+
 <p align="center"><kbd><a href = "">
   <img width="640" src="/img/BAP_FIG.png" alt = ""> </a> </kbd>
 </p>
