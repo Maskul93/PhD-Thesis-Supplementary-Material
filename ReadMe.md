@@ -27,6 +27,10 @@ In this repository you can find some of the procedures I used in my works in the
 ### **Permutation Feature Importance**  - Codename ```PFI``` 
 [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
 
+<p align="center"><kbd><a href = "">
+  <img width="640" src="/img/PFI_FIG.png" alt = ""> </a> </kbd>
+</p>
+
   - This portion of the supplementary material relates to the determination of the importance of a feature into a dataset.
   - Published in *Machine learning aided jump height estimate democratization through smartphone measures*, Frontiers in Sports and Active Living. doi: [10.3389/fspor.2023.1112739](https://doi.org/10.3389/fspor.2023.1112739)
   
