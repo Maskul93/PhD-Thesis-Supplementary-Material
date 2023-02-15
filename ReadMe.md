@@ -43,7 +43,7 @@ Each filename prefix refers to the project it shares the acronym with (e.g., ```
 
 ## Otro 
 
-The codes related to other *bigger* portions of the thesis are left to other different repositories, since they had to be made available for publishing purposes. In this case, coding is written either using ```MATLAB```, ```Python``` (Jupyter Notebook), or ```R```. In particular:
+The codes related to other *bigger* portions of the thesis are left to other different repositories, since they had to be made available for publishing purposes. Also in this case, coding is written either using ```MATLAB```, ```Python``` (Jupyter Notebook), or ```R```. In particular:
 
 - [x] Smartphone Height Democratization is available at [height-democratization](https://github.com/Maskul93/height-democratization)
 - [x] Mechanical Power Estimation is available at [Jump-Power-ML-IMU](https://github.com/Maskul93/Jump-Power-ML-IMU)
